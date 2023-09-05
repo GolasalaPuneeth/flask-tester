@@ -1,30 +1,73 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>WiFi Configuration</title>
-    <link rel="icon" type="image/x-icon" href="/static/FSS.png">
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Config Form</title>
+      <link rel="icon" type="image/x-icon" href="/static/FSS.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <style>
+    .login__crd {
+      border-bottom: 50px;
+      display: flex;
+      flex-wrap: nowrap;
+      width: 20rem;
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }
+  </style>
 </head>
 
-<body><body style="background: linear-gradient(
+<body style="background: linear-gradient(
     90deg,
     rgba(4, 0, 36, 1) 0%,
     rgba(21, 6, 77, 1) 15%,
     rgba(0, 255, 120, 1) 100%
   );">
-    <h1>WiFi Configuration</h1>
-    <form action="/config" method="post" onsubmit="return validateForm()">
-        <label for="wifiName">wifi</label>
-        <input type="text" id="wifi" name="wifi" required><br><br>
-        
-        <label for="wifiPassword">password</label>
-        <input type="password" id="password" name="password" required><br><br>
-        
-        <label for="confirmPassword">Confirm Password:</label>
-        <input type="password" id="confirmpassword" name="confirmpassword" required><br><br>
-        
-        <input type="submit" value="Submit">
-    </form>
+  <section class="my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center align-items-center">
+          <div class="card login__crd">
+            <div class="card-header">
+              <div class="text-center">
+                <img src="{{url}}/static/MTT_logo.png" class="img-fluid" alt="logo" width="120" height="100">
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="form">
+              <form action="/config" method="post" onsubmit="return validateForm();">
+     <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">WIFI</label>
+    <input type="text" class="form-control" name="wifi" placeholder="" required>
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">password</label>
+    <input type="text" class="form-control" id="password" name="password" placeholder="" required>
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">confirmpassword</label>
+    <input type="text" class="form-control" id="confirmpassword" name="confirmpassword" placeholder="" required>
+  </div>
+  <div class="mb-3 text-center">
+    <button type="submit" class="btn btn-success">Submit</button>
+              
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+ 
+    
       <script>
         function validateForm() {
             var password = document.getElementById("password").value;
