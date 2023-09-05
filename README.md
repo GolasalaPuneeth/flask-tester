@@ -23,4 +23,5 @@ This is a [Flask](https://flask.palletsprojects.com/en/1.1.x/) app that serves a
 - Start the server for development `python3 main.py`
 - [Link](https://flask-production-75b8.up.railway.app/config)
 # Above link will guide to configurator page
-https://karenngala.github.io/portfolio/assets/img/flask-python.png
+![image](https://github.com/GolasalaPuneeth/flask-tester/assets/97512630/faf7188e-b812-48d3-861c-0a26675b354a)
+
