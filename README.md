@@ -1,6 +1,6 @@
 ---
-title: Flask
-description: A popular minimal server framework for Python
+title: Flask_Server
+description: Python's widely embraced server framework boasts the capability to develop both APIs and machine learning models
 tags:
   - python
   - flask
@@ -21,3 +21,5 @@ This is a [Flask](https://flask.palletsprojects.com/en/1.1.x/) app that serves a
 
 - Install Python requirements `pip install -r requirements.txt`
 - Start the server for development `python3 main.py`
+- [Link](https://flask-production-75b8.up.railway.app/config)
+- #Above link will guide to configurator page
