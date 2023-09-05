@@ -3,7 +3,6 @@ title: Flask_Server
 description: Python's widely embraced server framework boasts the capability to develop both APIs and machine learning models
 tags:
   - python
-  - flask
 ---
 
 # Python Flask Example
