@@ -20,7 +20,7 @@ def config():
         
 
         filename = 'wpa_supplicant.conf'
-        with open(filename, 'a') as file:
+        with open(filename, 'w') as file:
             file.write("country=IN\n")
             file.write("ctrl_interface=DIR=/var/run/wpa_supplicant\n")
             file.write("GROUP=netdev\n")
