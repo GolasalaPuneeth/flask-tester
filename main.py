@@ -28,7 +28,7 @@ def config():
             file.write("\nnetwork={\n")
             file.write(f"""\tssid="{ssid}"\n""")
             file.write(f"""\tpsk="{pask}"\n""")
-            file.write("""key_mgmt=WPA-PSK\n""")
+            file.write("""\tkey_mgmt=WPA-PSK\n""")
             file.write("}\n")
             
 
