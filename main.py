@@ -21,13 +21,14 @@ def config():
 
         filename = 'wpa_supplicant.conf'
         with open(filename, 'w') as file:
-            file.write("country=IN\n")
-            file.write("ctrl_interface=DIR=/var/run/wpa_supplicant\n")
-            file.write("GROUP=netdev\n")
+            
+            file.write("ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev\n")
             file.write("update_config=1\n")
-            file.write("network={\n")
+            file.write("country=IN\n")
+            file.write("\nnetwork={\n")
             file.write(f"""\tssid="{ssid}"\n""")
             file.write(f"""\tpsk="{pask}"\n""")
+            file.write("""key_mgmt=WPA-PSK\n""")
             file.write("}\n")
             
 
